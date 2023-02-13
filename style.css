@@ -1,0 +1,32 @@
+body {
+    padding-top: 10px;
+  }
+
+.subheading {
+  color: var(--bs-orange);
+  width: 80%;
+  font-size: 20px;
+}
+
+.text-basic {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size:18px;
+}
+
+.text-menu {
+  font-family: 'Karma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.button-style {
+  background-color: #84AFF1;
+}
+
+.screen {
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
