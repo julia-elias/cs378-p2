@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <!-- Implement from below -->
   <body>
@@ -28,60 +29,145 @@
       </div>
     </div>
 
-    <div class="container align-content-center">
-      <div class="row justify-content-center py-4">
-        <div class="col-4">
+    <div class="container align-content-center h-auto">
+      <div class="row justify-content-center py-3">
+        <div class="col-3">
           <img src="mac.png" alt="macncheese"/>
         </div>
-        <div class="col-6">
-          <p class="text-menu">mac & cheese</p>
-          <button type="button" class="button-style rounded-pill px-3 text-basic">order</button>
+        <div class="col-5">
+          <p class="text-menu mac-text">mac & cheese</p>
         </div>
-        <div class="col-2 text-basic pl-3">
-          $5
+        <div class="col-3 text-basic">
+          <div class="row-2 pt-2">
+            <p class="text-end">$<span id="mac-cost">5</span></p>
+          </div>
+          <div class="row justify-content-end align-items-center">
+            <div class="col-4 g-0">
+              <button type="button" class="button-rounded" id="mac-minus">
+                <i class="fa fa-minus icon-setting"></i>
+              </button>           
+            </div>
+            <div class="col-3 g-0">
+              <span id="mac-amount"></span>
+            </div>
+            <div class="col-4 g-0">
+                <button type="button" class="button-rounded" id="mac-add">
+                  <i class="fa fa-plus icon-setting"></i>
+                </button>               
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row justify-content-center py-4">
-        <div class="col-4">
+
+
+      <div class="row justify-content-center py-3">
+        <div class="col-3">
           <img src="pasta.png" alt="pasta"/>
         </div>
-        <div class="col-6">
+        <div class="col-5">
           <p class="text-menu">pasta</p>
-          <button type="button" class="button-style rounded-pill px-3 text-basic">order</button>
         </div>
-        <div class="col-2 text-basic">
-          $8
+        <div class="col-3 text-basic">
+          <div class="row-2 pt-2">
+            <p class="text-end">$<span id="pasta-cost">8</span></p>
+          </div>
+          <div class="row justify-content-end align-items-center">
+            <div class="col-4 g-0">
+              <button type="button" class="button-rounded" id="pasta-minus">
+                <i class="fa fa-minus icon-setting"></i>
+              </button>           
+            </div>
+            <div class="col-3 g-0">
+              <span id="pasta-amount"></span>
+            </div>
+            <div class="col-4 g-0">
+                <button type="button" class="button-rounded" id="pasta-add">
+                  <i class="fa fa-plus icon-setting"></i>
+                </button>               
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row justify-content-center py-4">
-        <div class="col-4">
+      <div class="row justify-content-center py-3">
+        <div class="col-3">
           <img src="tacos.png" alt="tacos"/>
         </div>
-        <div class="col-6">
+        <div class="col-5">
           <p class="text-menu">tacos</p>
-          <button type="button" class="button-style rounded-pill px-3 text-basic">order</button>
         </div>
-        <div class="col-2 text-basic">
-          $8
+        <div class="col-3 text-basic">
+          <div class="row-2 pt-2">
+            <p class="text-end">$<span id="taco-cost">8</span></p>
+          </div>
+          <div class="row justify-content-end align-items-center">
+            <div class="col-4 g-0">
+              <button type="button" class="button-rounded" id="taco-minus">
+                <i class="fa fa-minus icon-setting"></i>
+              </button>           
+            </div>
+            <div class="col-3 g-0">
+              <span id="taco-amount"></span>
+            </div>
+            <div class="col-4 g-0">
+                <button type="button" class="button-rounded" id="taco-add">
+                  <i class="fa fa-plus icon-setting"></i>
+                </button>               
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row justify-content-center py-4">
-        <div class="col-4">
+      <div class="row justify-content-center py-3">
+        <div class="col-3">
           <img src="enchilada.png" alt="enchilada"/>
         </div>
-        <div class="col-6">
+        <div class="col-5">
           <p class="text-menu">enchilada</p>
-          <button type="button" class="button-style rounded-pill px-3 text-basic">order</button>
         </div>
-        <div class="col-2 text-basic">
-          $10
+
+        <div class="col-3 text-basic">
+          <div class="row-2 pt-2">
+            <p class="text-end">$<span id="enchilada-cost">10</span></p>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-4 g-0">
+              <button type="button" class="button-rounded" id="enchilada-minus">
+                <i class="fa fa-minus icon-setting"></i>
+              </button>           
+            </div>
+            <div class="col-3 g-0">
+              <span id="enchilada-amount"></span>
+            </div>
+            <div class="col-4 g-0">
+                <button type="button" class="button-rounded" id="enchilada-add">
+                  <i class="fa fa-plus icon-setting"></i>
+                </button>               
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+      <div class="row px-4">
+        <div class="col-6">
+          Subtotal: $<span id="total"></span>
+        </div>
+        <div class="col-2 g-0">
+          <button type="button" id="order" class="button-style">
+            Order
+          </button>      
+        </div>
+        <div class="col-4 pr-3">
+          <div class="text-end">
+          <button type="button" id="clear" class="button-style">
+            Clear all
+          </button>        
+        </div>      
+        </div>
+      </div>
+  
+  <script src="script.js"></script>
 
-    
   </body>
 </html>
